@@ -1,0 +1,36 @@
+{
+  "name": "json-sorted-stringify",
+  "repository": "github:fabiospampinato/json-sorted-stringify",
+  "description": "Alternative JSON.stringify function with sorted keys, so the output is stable.",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "tsex clean",
+    "benchmark": "tsex benchmark",
+    "benchmark:watch": "tsex benchmark --watch",
+    "benchmark:update:small": "wget https://raw.githubusercontent.com/fraunhoferfokus/JSum/master/benchmark/fixtures/small.json -O tasks/small.json",
+    "benchmark:update:medium": "wget https://raw.githubusercontent.com/fraunhoferfokus/JSum/master/benchmark/fixtures/medium.json -O tasks/medium.json",
+    "benchmark:update:large": "wget https://raw.githubusercontent.com/zemirco/sf-city-lots-json/master/citylots.json -O tasks/large.json",
+    "benchmark:update": "npm run benchmark:update:small && npm run benchmark:update:medium && npm run benchmark:update:large",
+    "compile": "tsex compile",
+    "compile:watch": "tsex compile --watch",
+    "test": "tsex test",
+    "test:watch": "tsex test --watch",
+    "prepublishOnly": "tsex prepare"
+  },
+  "keywords": [
+    "json",
+    "sorted",
+    "stable",
+    "stringify"
+  ],
+  "devDependencies": {
+    "benchloop": "^2.0.0",
+    "fava": "^0.2.0",
+    "tsex": "^2.2.0",
+    "typescript": "^4.9.5"
+  }
+}
