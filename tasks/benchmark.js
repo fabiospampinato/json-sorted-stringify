@@ -13,7 +13,7 @@ const LARGE = JSON.parse ( fs.readFileSync ( './tasks/large.json', 'utf8' ) );
 
 /* MAIN */
 
-benchmark.defaultOptions = Object.assign ( benchmark.defaultOptions, {
+benchmark.config ({
   iterations: 1
 });
 
