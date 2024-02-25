@@ -13,8 +13,8 @@ npm install --save json-sorted-stringify
 ```ts
 import stringify from 'json-sorted-stringify';
 
-stirngify ({ a: 1, b: 2 }); // => '{"a":1,"b":2}'
-stirngify ({ b: 2, a: 1 }); // => '{"a":1,"b":2}'
+stringify ({ a: 1, b: 2 }); // => '{"a":1,"b":2}'
+stringify ({ b: 2, a: 1 }); // => '{"a":1,"b":2}'
 ```
 
 ## License
