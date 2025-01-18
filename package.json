@@ -3,7 +3,7 @@
   "repository": "github:fabiospampinato/json-sorted-stringify",
   "description": "Alternative JSON.stringify function with sorted keys, so the output is stable.",
   "license": "MIT",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "main": "dist/index.js",
   "exports": "./dist/index.js",
