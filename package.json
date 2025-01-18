@@ -2,6 +2,7 @@
   "name": "json-sorted-stringify",
   "repository": "github:fabiospampinato/json-sorted-stringify",
   "description": "Alternative JSON.stringify function with sorted keys, so the output is stable.",
+  "license": "MIT",
   "version": "1.0.0",
   "type": "module",
   "main": "dist/index.js",
@@ -29,8 +30,8 @@
   ],
   "devDependencies": {
     "benchloop": "^2.1.1",
-    "fava": "^0.2.1",
-    "tsex": "^3.0.1",
-    "typescript": "^5.1.6"
+    "fava": "^0.3.4",
+    "tsex": "^4.0.2",
+    "typescript": "^5.7.3"
   }
 }
