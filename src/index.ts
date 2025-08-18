@@ -1,7 +1,7 @@
 
 /* MAIN */
 
-const stringify = ( value: object ): string => {
+const stringify = ( value: unknown ): string => {
 
   return JSON.stringify ( value, ( _, value ) => {
 
